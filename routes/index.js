@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var sqlite3 = require('sqlite3');
 var bcrypt = require('bcrypt');
-var stripe = require("stripe")("SK_HERE"); //Put your SKey here
+var stripe = require("stripe")("SK_KEY_HERE"); //Put your key here
 sqlite3.verbose();
 var db = new sqlite3.Database('parkNgoDB.db');
 db.run("PRAGMA foreign_keys=ON");
